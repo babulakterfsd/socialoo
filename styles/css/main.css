@@ -1,9 +1,74 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
-*, ::after, ::before {
+*,
+::after,
+::before {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/*# sourceMappingURL=main.css.map */
+
+body {
+  height: 100vh;
+  background: #eeeeee;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  padding: 0 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card__img {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #e0466b;
+}
+
+.card__content {
+  padding: 1.5em;
+  background: white;
+}
+
+.card__skills {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0px;
+  padding: 0px;
+}
+
+.card__item {
+  padding: 0.3em 0.5em;
+  margin-right: 0.5em;
+  background: #da5757;
+  border-radius: 0.3em;
+  font-size: 0.85em;
+  color: white;
+}
+
+.card__item--active {
+  background: #e0466b;
+  font-weight: bold;
+}
+
+.card__link {
+  background: #2c8973;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+.card__link:hover {
+  background: #267764;
+}

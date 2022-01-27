@@ -1,9 +1,69 @@
-@import 'partials/variables';
-@import 'partials/mixins';
+@import "partials/variables";
+@import "partials/mixins";
 
-*, ::after, ::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+body {
+  height: $fullheight;
 
+  background: $primaryBgColor;
+  font-family: $secondaryFont;
+}
+.card {
+  padding: 0 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__img {
+    display: block;
+    height: 100px;
+    width: $width100;
+    background: $secondaryBgColor;
+  }
+
+  &__content {
+    padding: 1.5em;
+    background: white;
+  }
+
+  &__skills {
+    list-style-type: none;
+    display: flex;
+    margin: 15px 0px;
+    padding: 0px;
+  }
+  &__item {
+    padding: 0.3em 0.5em;
+    margin-right: 0.5em;
+    background: rgb(218, 87, 87);
+    border-radius: 0.3em;
+    font-size: 0.85em;
+    color: white;
+
+    &--active {
+      background: $secondaryBgColor;
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    background: #2c8973;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin-top: 0.5em;
+
+    &:hover {
+      background: #267764;
+    }
+  }
+}
