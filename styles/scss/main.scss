@@ -10,16 +10,12 @@
 }
 body {
   height: $fullheight;
-
   background: $primaryBgColor;
   font-family: $secondaryFont;
 }
 .card {
+  @include center;
   padding: 0 5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
   &__img {
     display: block;
@@ -30,7 +26,7 @@ body {
 
   &__content {
     padding: 1.5em;
-    background: white;
+    background: $primaryColor;
   }
 
   &__skills {
@@ -42,10 +38,10 @@ body {
   &__item {
     padding: 0.3em 0.5em;
     margin-right: 0.5em;
-    background: rgb(218, 87, 87);
+    background: $secondaryBgColor;
     border-radius: 0.3em;
     font-size: 0.85em;
-    color: white;
+    color: $primaryColor;
 
     &--active {
       background: $secondaryBgColor;
@@ -54,8 +50,8 @@ body {
   }
 
   &__link {
-    background: #2c8973;
-    color: white;
+    background: $colorGreen;
+    color: $primaryColor;
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -63,7 +59,7 @@ body {
     margin-top: 0.5em;
 
     &:hover {
-      background: #267764;
+      background: $colorGreenLight;
     }
   }
 }

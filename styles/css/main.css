@@ -16,12 +16,12 @@ body {
 }
 
 .card {
-  padding: 0 5em;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 0 5em;
 }
 
 .card__img {
@@ -33,7 +33,7 @@ body {
 
 .card__content {
   padding: 1.5em;
-  background: white;
+  background: #fff;
 }
 
 .card__skills {
@@ -48,10 +48,10 @@ body {
 .card__item {
   padding: 0.3em 0.5em;
   margin-right: 0.5em;
-  background: #da5757;
+  background: #e0466b;
   border-radius: 0.3em;
   font-size: 0.85em;
-  color: white;
+  color: #fff;
 }
 
 .card__item--active {
@@ -61,7 +61,7 @@ body {
 
 .card__link {
   background: #2c8973;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 0.5em;
@@ -70,5 +70,5 @@ body {
 }
 
 .card__link:hover {
-  background: #267764;
+  background: #1baa89;
 }
