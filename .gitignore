@@ -49,6 +49,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+.scss
 
 # Optional eslint cache
 .eslintcache
